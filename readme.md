@@ -3,7 +3,7 @@
 STOPWATCH using vanilla JavaScript project for frontend web development.
 
 1. Git repository link: https://github.com/satyam-software-developer/stopwatch-vanilla-javascript.git
-2. Hosted link: https://satyam-software-developer.github.io/alarm-clock-vanilla-JavaScript/
+2. Hosted link: https://satyam-software-developer.github.io/stopwatch-vanilla-javascript/
 
 ## ABOUT THIS PROJECT-:
 
@@ -44,7 +44,7 @@ Whether you're an athlete, a student, a chef, or simply in need of a reliable ti
 
 ## DEMO
 
-- https://satyam-software-developer.github.io/alarm-clock-vanilla-JavaScript/
+- https://satyam-software-developer.github.io/stopwatch-vanilla-javascript/
 
 ## Author
 
