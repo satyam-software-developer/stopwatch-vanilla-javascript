@@ -1,0 +1,264 @@
+html {
+  /* CSS rule to set the height of the HTML element to 100% of the viewport height */
+  height: 100%;
+  /* CSS rule to set the width of the HTML element to 100% of the viewport width */
+  width: 100%;
+}
+
+/* Google Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Apply the following styles to all elements in the document */
+
+* {
+  margin: 0; /* Reset the margin of all elements to 0 */
+  padding: 0; /* Reset the padding of all elements to 0 */
+  box-sizing: border-box; /* Ensure that padding and border are included in the element's total width and height */
+  font-family: "Poppins", sans-serif; /* Set the default font family for all elements to 'Poppins' with fallback to sans-serif */
+}
+
+/* Variables */
+/* Define CSS custom properties (variables) at the root level */
+
+:root {
+  /* Define a custom property for the primary font family */
+  --primary-font: "Poppins", sans-serif;
+
+  /* Define custom properties for colors */
+  --white-color: #fff; /* White color */
+  --blue-color: #150050; /* Blue color */
+  --black-color: #000; /* Black color */
+  --grey-color: #f0f0f0; /* Light grey color */
+  --grey-light-color: #f5f5f5; /* Lighter grey color */
+  --grey-dark-color: #999; /* Dark grey color */
+  --primary-color: #00bcd4; /* Primary color */
+  --secondary-color: #ff5722; /* Secondary color */
+  --secondary-dark-color: #d32f2f; /* Darker shade of secondary color */
+}
+
+/* Apply styles to the body element */
+
+body {
+  font-family: var(
+    --primary-font
+  ); /* Set the font family of the body to the value of the custom property --primary-font */
+  background-image: url(./images/bg5.jpg); /* Set the background image of the body */
+  background-position: center center; /* Set the position of the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: cover; /* Scale the background image to cover the entire viewport */
+  height: 100vh; /* Set the height of the body to 100% of the viewport height */
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align flex items vertically at the center */
+  justify-content: center; /* Align flex items horizontally at the center */
+}
+
+/* Apply styles to elements with class "container" */
+
+.container {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align flex items vertically at the center */
+  justify-content: center; /* Align flex items horizontally at the center */
+  height: 100vh; /* Set the height of the container to 100% of the viewport height */
+  width: 100%; /* Set the width of the container to 100% */
+  max-width: 1100px; /* Set the maximum width of the container to 1100px */
+  margin: 0 auto; /* Center the container horizontally by setting left and right margins to auto */
+  padding: 0 20px; /* Apply 0 padding on the top and bottom, and 20px padding on the left and right */
+}
+
+/* Apply styles to elements with class "container-2" */
+
+.container-2 {
+  border: 1px solid transparent; /* Apply a transparent 1px border around the container */
+  padding: 50px; /* Apply 50px padding to the content inside the container */
+  background-color: rgb(
+    1,
+    5,
+    42
+  ); /* Set the background color of the container to a dark blue */
+  border-radius: 50px; /* Apply a border radius of 50px to create rounded corners */
+  box-shadow: 1px 1px 20em rgb(6, 72, 214); /* Apply a box shadow effect to the container */
+
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align flex items vertically at the center */
+  justify-content: center; /* Align flex items horizontally at the center */
+  flex-direction: column; /* Arrange flex items in a column layout */
+  text-align: center; /* Center-align text content within the container */
+
+  margin: 0 auto; /* Center the container horizontally by setting left and right margins to auto */
+  margin-top: -50px; /* Apply a negative top margin to adjust the positioning of the container */
+  margin-bottom: 50px; /* Apply a bottom margin to add space below the container */
+  margin-left: -50px; /* Apply a negative left margin to adjust the positioning of the container */
+  margin-right: -50px; /* Apply a negative right margin to adjust the positioning of the container */
+}
+
+/* Apply styles to elements with class "wrapper" */
+
+.wrapper {
+  width: 800px; /* Set the width of the wrapper to 800 pixels */
+  margin: auto; /* Center the wrapper horizontally by setting left and right margins to auto */
+  color: var(
+    --white-color
+  ); /* Set the text color to the value of the custom property --white-color */
+  text-align: center; /* Center-align text content within the wrapper */
+}
+
+/* Apply styles to all <h1> elements */
+
+h1 {
+    font-weight: 100; /* Set the font weight to 100 (thin) */
+    font-size: 5em; /* Set the font size to 5 times the default font size */
+    text-transform: uppercase; /* Transform the text to uppercase */
+  
+    margin-bottom: 20px; /* Apply a bottom margin of 20px to create space below the <h1> element */
+    margin-top: -20px; /* Apply a negative top margin of 20px to adjust the positioning of the <h1> element */
+    letter-spacing: 2px; /* Set the letter spacing to 2 pixels */
+    text-shadow: 1px 1px 20px rgb(6, 72, 214); /* Apply a text shadow effect with a blur radius of 20px */
+  }
+
+/* Apply styles to elements with the ID 'seconds', 'tens', and all <p> elements */
+
+#seconds,
+#tens,
+p {
+  font-size: 3em; /* Set the font size to 3 times the default font size */
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align content vertically at the center */
+  justify-content: center; /* Align content horizontally at the center */
+
+  letter-spacing: 2px; /* Set the letter spacing to 2 pixels */
+  text-shadow: 1px 1px 20px rgb(6, 72, 214); /* Apply a text shadow effect with a blur radius of 20px */
+}
+
+
+/* Apply styles to elements with the class 'common_btn' */
+
+.common_btn {
+    border-radius: 5px; /* Apply border radius of 5 pixels to create rounded corners */
+    background-color: transparent; /* Set the background color to transparent */
+    color: var(--white-color); /* Set the text color to the value of the custom property --white-color */
+    border: 1px solid var(--white-color); /* Apply a 1px solid border with the color specified by the custom property --white-color */
+    text-decoration: none; /* Remove underline from links */
+    cursor: pointer; /* Set cursor to pointer to indicate interactive element */
+    font-size: 1.2em; /* Set the font size to 1.2 times the default font size */
+    padding: 18px 10px; /* Apply 18 pixels of padding on the top and bottom, and 10 pixels of padding on the left and right */
+    width: 180px; /* Set the width of the button to 180 pixels */
+    margin: 10px; /* Apply 10 pixels of margin around the button */
+    outline: none; /* Remove outline when button is focused */
+  
+    text-transform: uppercase; /* Transform text to uppercase */
+    font-weight: bold; /* Set font weight to bold */
+    letter-spacing: 2px; /* Set letter spacing to 2 pixels */
+    transition: 0.5s; /* Apply a transition effect with a duration of 0.5 seconds */
+    box-shadow: 0px 0px 5px rgb(6, 72, 214); /* Apply a box shadow effect with a blur radius of 5 pixels */
+    text-shadow: 0px 0px 5px rgb(6, 72, 214); /* Apply a text shadow effect with a blur radius of 5 pixels */
+  }
+  
+/* Apply styles to elements with the class 'common_btn' when hovered or focused */
+
+.common_btn:hover,
+.common_btn:focus {
+  transition: all 0.5s ease-in-out; /* Apply a transition effect to all properties with a duration of 0.5 seconds and ease-in-out timing function */
+  background: var(--blue-color); /* Set the background color to the value of the custom property --blue-color */
+  border: 1px solid var(--blue-color); /* Apply a 1px solid border with the color specified by the custom property --blue-color */
+  color: var(--white-color); /* Set the text color to the value of the custom property --white-color */
+
+  box-shadow: 0px 0px 5px var(--blue-color); /* Apply a box shadow effect with a blur radius of 5 pixels and the color specified by the custom property --blue-color */
+  text-shadow: 0px 0px 5px var(--blue-color); /* Apply a text shadow effect with a blur radius of 5 pixels and the color specified by the custom property --blue-color */
+}
+
+/*Media queries for responsiveness */
+/* Apply styles for screens with a maximum width of 1024 pixels */
+
+@media screen and (max-width: 1024px) {
+    /* Apply styles to elements with the class 'wrapper' */
+    .wrapper {
+      width: 100%; /* Set the width of the wrapper to 100% of its container */
+      padding: 15px; /* Apply 15 pixels of padding to the content inside the wrapper */
+    }
+  
+    /* Apply styles to all <h1> elements */
+    h1 {
+      font-size: 30px; /* Set the font size of <h1> elements to 30 pixels */
+    }
+  
+    /* Apply styles to all <p> elements */
+    p {
+      font-size: 20px; /* Set the font size of <p> elements to 20 pixels */
+      margin-bottom: 15px; /* Apply a bottom margin of 15 pixels to <p> elements */
+    }
+  
+    /* Apply styles to all <button> elements */
+    button {
+      font-size: 16px; /* Set the font size of <button> elements to 16 pixels */
+      padding: 8px 16px; /* Apply 8 pixels of padding on the top and bottom, and 16 pixels of padding on the left and right */
+    }
+  }
+
+
+/* Apply styles for screens with a maximum width of 850 pixels */
+
+@media only screen and (max-width: 850px) {
+    /* Apply styles to elements with the class 'wrapper' */
+    .wrapper {
+      width: 100%; /* Set the width of the wrapper to 100% of its container */
+      padding: 10px; /* Apply 10 pixels of padding to the content inside the wrapper */
+    }
+  }
+  
+
+/* Apply styles for screens with a maximum width of 768 pixels */
+
+@media screen and (max-width: 768px) {
+    /* Apply styles to elements with the class 'wrapper' */
+    .wrapper {
+      width: 100%; /* Set the width of the wrapper to 100% of its container */
+      padding: 10px; /* Apply 10 pixels of padding to the content inside the wrapper */
+    }
+  
+    /* Apply styles to all <h1> elements */
+    h1 {
+      font-size: 24px; /* Set the font size of <h1> elements to 24 pixels */
+    }
+  
+    /* Apply styles to all <p> elements */
+    p {
+      font-size: 18px; /* Set the font size of <p> elements to 18 pixels */
+      margin-bottom: 10px; /* Apply a bottom margin of 10 pixels to <p> elements */
+    }
+  
+    /* Apply styles to all <button> elements */
+    button {
+      font-size: 14px; /* Set the font size of <button> elements to 14 pixels */
+      padding: 6px 12px; /* Apply 6 pixels of padding on the top and bottom, and 12 pixels of padding on the left and right */
+    }
+  }
+  
+
+/* Apply styles for screens with a maximum width of 480 pixels */
+
+@media screen and (max-width: 480px) {
+    /* Apply styles to elements with the class 'wrapper' */
+    .wrapper {
+      width: 100%; /* Set the width of the wrapper to 100% of its container */
+      padding: 10px; /* Apply 10 pixels of padding to the content inside the wrapper */
+    }
+  
+    /* Apply styles to all <h1> elements */
+    h1 {
+      font-size: 20px; /* Set the font size of <h1> elements to 20 pixels */
+    }
+  
+    /* Apply styles to all <p> elements */
+    p {
+      font-size: 16px; /* Set the font size of <p> elements to 16 pixels */
+      margin-bottom: 5px; /* Apply a bottom margin of 5 pixels to <p> elements */
+    }
+  
+    /* Apply styles to all <button> elements */
+    button {
+      font-size: 12px; /* Set the font size of <button> elements to 12 pixels */
+      padding: 4px 8px; /* Apply 4 pixels of padding on the top and bottom, and 8 pixels of padding on the left and right */
+    }
+  }
+  
+  
